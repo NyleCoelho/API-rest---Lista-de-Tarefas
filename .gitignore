@@ -1,51 +1,265 @@
-# Compiled class files
-*.class
+# ------------------------------------------------------------------------------
+# Gradle
+# ------------------------------------------------------------------------------
+.gradle/
+**/build/
+!src/**/build/
+build/
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
 
-# Log file
+# Ignore Gradle project-specific cache directory
+.project
+
+# ------------------------------------------------------------------------------
+# Maven
+# ------------------------------------------------------------------------------
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# ------------------------------------------------------------------------------
+# Eclipse
+# ------------------------------------------------------------------------------
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# PyDev specific (Python plugin for Eclipse)
+.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+# Annotation Processing
+.apt_generated/
+
+# Scala IDE specific (Scala & Java development for Eclipse)
+.cache-main
+.scala_dependencies
+.worksheet
+
+# ------------------------------------------------------------------------------
+# IntelliJ IDEA
+# ------------------------------------------------------------------------------
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Editor-based Rest Client
+.idea/httpRequests
+
+# ------------------------------------------------------------------------------
+# NetBeans
+# ------------------------------------------------------------------------------
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# ------------------------------------------------------------------------------
+# VS Code
+# ------------------------------------------------------------------------------
+.vscode/
+
+# ------------------------------------------------------------------------------
+# MacOS
+# ------------------------------------------------------------------------------
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ------------------------------------------------------------------------------
+# Windows
+# ------------------------------------------------------------------------------
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# ------------------------------------------------------------------------------
+# Logs
+# ------------------------------------------------------------------------------
+logs/
 *.log
+log/
+**/*.log
+**/logs/
+**/*.logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
-# BlueJ files
-*.ctxt
+# ------------------------------------------------------------------------------
+# Runtime data
+# ------------------------------------------------------------------------------
+pids/
+*.pid
+*.seed
+*.pid.lock
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# ------------------------------------------------------------------------------
+# Application Configuration
+# ------------------------------------------------------------------------------
+**/application.properties
+**/application.yml
+**/application-*.properties
+**/application-*.yml
+!**/src/main/resources/application.properties
+!**/src/main/resources/application.yml
+!**/src/test/resources/application.properties
+!**/src/test/resources/application.yml
 
-# Package Files #
+# ------------------------------------------------------------------------------
+# Environment Variables
+# ------------------------------------------------------------------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ------------------------------------------------------------------------------
+# Unit test reports
+# ------------------------------------------------------------------------------
+**/TEST-*.xml
+
+# ------------------------------------------------------------------------------
+# IDE Files
+# ------------------------------------------------------------------------------
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------------------------
+# Build files
+# ------------------------------------------------------------------------------
+**/target/
+**/bin/
+
+# ------------------------------------------------------------------------------
+# Others
+# ------------------------------------------------------------------------------
+*.class
 *.jar
 *.war
-*.nar
 *.ear
 *.zip
 *.tar.gz
 *.rar
+*.original
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-# IDE files
-.classpath
-.project
-.settings/
-.idea/
-*.iml
-*.ipr
-*.iws
-
-# Build output
-target/
-build/
-out/
-bin/
-
-# Dependency directories
-lib/
-libs/
-
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# ------------------------------------------------------------------------------
+# Project Specific (Adicione aqui paths específicos do seu projeto)
+# ------------------------------------------------------------------------------
+# Exemplo: /config/credentials.properties
+# /upload-dir/
